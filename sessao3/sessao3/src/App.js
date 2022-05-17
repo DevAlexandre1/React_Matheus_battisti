@@ -1,16 +1,23 @@
 import './App.css';
-import Sessao from './sessao';
-import city from './assets/city.jpg';
-import ListerRender from './Components/ListerRender';
+import MyComponents from './Components/MyComponents';
+import UserDetails from './Components/UserDetails';
 
 function App() {
+
+  const Pessoas = [
+    {id:1, nome:"Alex", idade:20,  profissao:"Analista de software"},
+    {id:2, nome:"Maicon", idade:30,  profissao:"Padeiro"},
+    {id:3, nome:"Andre", idade:15,  profissao:"Musico"}
+  ];
+
   return (
     <div className="App">
-      <Sessao/>
-      <img src="/img1.jpg" alt="img1" />
-      <img src={city} alt="Cidade" />
-      <ListerRender/>
+    <MyComponents />
 
+
+      {Pessoas.map((Pessoas)=>(
+        <UserDetails key={Pessoas.id} nome={Pessoas.nome} idade={Pessoas.idade} profissao={Pessoas.profissao}/> ))}    
+     
     </div>
   );
 }
