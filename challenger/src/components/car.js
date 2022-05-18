@@ -1,11 +1,13 @@
+import styles from './Car.module.css'
 
-const Car = (carros) => {
+const Car = (x) => {
   return (
-    <div>
-        <h1>{carros.modelo}</h1>
-        <h2>{carros.valor}</h2>
-        <h2>{carros.ano}</h2>
-        <h2>{carros.novo}</h2>
+    <div className={styles.my_cars}>
+     
+        <h1>{x.modelo}</h1>        
+        <h1>Valor: {x.valor}</h1>
+        <h2>Ano:{x.ano}</h2>
+        <h2>Carro novo: {x.novo ? "Sim": "Não"}</h2>       
 
     </div>
   )

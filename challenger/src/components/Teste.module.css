@@ -1,0 +1,8 @@
+.my_teste{
+    display: block;
+    margin: auto;
+    color: gold;
+    background-color: #222;
+    width: 500px;
+    border: 2px solid red;
+}
