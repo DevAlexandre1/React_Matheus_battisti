@@ -1,0 +1,23 @@
+body{
+  width: 100%;
+  background-color: rgb(34, 32, 33);
+}
+
+header{
+
+  height: 33vh;
+  
+  background-color: aqua;
+}
+main{
+
+  height: 33vh;
+  
+  background-color: rgb(0, 68, 255);
+}
+footer{
+
+  height: 33vh;
+  
+  background-color: rgb(0, 4, 255);
+}

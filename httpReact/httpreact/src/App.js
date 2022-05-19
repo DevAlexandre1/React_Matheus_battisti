@@ -1,5 +1,6 @@
 import './App.css';
-import {useState, useEffect} from 'react'
+import { useEffect, useState } from 'react';
+const url = "http://localhost:3000/products"
 
 function App() {
 const [products, setProducts] = useState([]);
@@ -7,7 +8,7 @@ const [products, setProducts] = useState([]);
 //1- resgatando dados
 
 useEffect(async ()=>{
-  
+  const res = await fetch()
 });
   return (
     <div className="App">
