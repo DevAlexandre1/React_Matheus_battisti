@@ -1,8 +1,13 @@
 import './App.css';
 import ButtonHome from './components/ButtonHome';
-import imghome from './imgs/HomePageButton.jpg'
+//import {useState, useEffect} from 'react'
+import ButtonHome2 from './components/ButtonHome2';
+import Renderizar from './components/Renderizar';
+
 
 function App() {
+  
+  
   return (
     
        <div className="App">
@@ -10,12 +15,18 @@ function App() {
           <header><p>Header</p>          
               <h1>home Page</h1>  
           </header>
-          <main><p>Main</p>
+          <main>
+            <h1>
+              Eventos
+            </h1>
+            <ButtonHome/>
+            <ButtonHome2/>
+            
           </main>
           <footer>            
             <div>
-                <ButtonHome/>
-                <img src></img>
+              <Renderizar/>        
+                    
             </div>          
           </footer>
         </div>      

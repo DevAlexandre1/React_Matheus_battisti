@@ -1,10 +1,20 @@
 const ButtonHome = () => {
+    let var1 = 0
+    const eventoFirst = () =>{
+        
+        console.log("Evento 1")
+        //console.log("Valor atual da variável é:", {var1})
+      };
+      
   return (
     <div>
-        <img src="../src/imgs/HomePageButton.jpg" alt="home"></img>
-        <h1 className="home">
-            HOME
-        </h1>
+        <div>
+            <label>
+                <input className="inp"></input>
+            </label>            
+        </div>    
+            <button onClick={eventoFirst}>Clique aqui!</button>
+
     </div>
   )
 }
